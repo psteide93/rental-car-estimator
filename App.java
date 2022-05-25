@@ -12,19 +12,19 @@ public class App {
     System.out.println("How many days will you be renting?");
     int daysOfRental = input.nextInt();
     System.out.println("Would you like an electronic toll tag at $3.95? (y/n)");
-    if (input.next().contains("y")) {
+    if (input.next().equalsIgnoreCase("y")) {
       tollTag = true;
     } else {
       tollTag = false;
     }
     System.out.println("Would you like  a GPS at $2.95/day(y/n)");
-    if (input.next().contains("y")) {
+    if (input.next().equalsIgnoreCase("y")) {
       gps = true;
     } else {
       gps = false;
     }
     System.out.println("Would you like roadside assistance at $3.95/day? (y/n)");
-    if (input.next().contains("y")) {
+    if (input.next().equalsIgnoreCase("y")) {
       roadside = true;
     } else {
       roadside = false;
